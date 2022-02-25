@@ -1,6 +1,6 @@
 import React from 'react'
 import ModalGenerator from '../components/ModalGenerator'
-import UserForm from "../components/UserForm/UserForm"
+import UserForm from "../components/UserForm"
 
 const UserAppend = (props) => {
     return (

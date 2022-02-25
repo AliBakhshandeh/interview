@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Container, Button } from "react-bootstrap";
+
 const Navigation = (props) => {
   return (
     <Navbar
@@ -37,4 +38,4 @@ const Navigation = (props) => {
     </Navbar>
   );
 };
-export default Navigation;
+export default React.memo(Navigation);

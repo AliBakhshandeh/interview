@@ -1,0 +1,11 @@
+tr td{
+    text-align: center;
+    vertical-align: middle;
+}
+.abilitiesTag{
+    padding: 5px 18px 8px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    color: #333;
+    margin: 5px;
+}

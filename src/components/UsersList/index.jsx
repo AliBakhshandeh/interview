@@ -1,5 +1,6 @@
 import React from "react";
 import { Table } from "react-bootstrap";
+import "./UsersList.css"
 // dynamic Header UsersTable
 const TableHead = ["#", "firstname", "lastname", "age", "abilites"];
 
@@ -19,23 +20,19 @@ const UsersList = (props) => {
         {props.UsersList.map((user, index) => {
           return (
             <tr key={index}>
-              <td>{index}</td>
+              <td>
+                {index}
+              </td>
               <td>{user.firstname}</td>
               <td>{user.lastname}</td>
               <td>{user.age}</td>
-              <td>
+              <td style={{ padding: "20px 0" }}>
                 {/* show abilities user */}
                 {user.abilities.map((abilite, index) => {
                   return (
                     <span
+                    className="abilitiesTag"
                       key={index}
-                      style={{
-                        padding: "5px 18px 8px",
-                        backgroundColor: "rgb(143, 144, 145)",
-                        borderRadius: "10px",
-                        color: "#fff",
-                        margin: "5px",
-                      }}
                     >
                       {abilite}
                     </span>

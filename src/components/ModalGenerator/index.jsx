@@ -18,10 +18,6 @@ export default function ModalGenerator(props) {
         {/* show data on modal */}
         {props.children}
       </Modal.Body>
-      <Modal.Footer>
-        {/* close modal */}
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
-
+import "./UserForm.css"
 // default abilities for show checkbox
 const default_abilities = ["html", "css", "js", "React"];
 const UserForm = (props) => {
@@ -50,11 +50,11 @@ const UserForm = (props) => {
           disabled
         />
       </Form.Group>
-      <div>
+      <div className="d-flex">
         {/* show abilities */}
         {default_abilities.map((type, index) => {
           return (
-            <div key={index} className="mb-3">
+            <div key={index} className="mb-3 abilities_CheckBox">
               <Form.Check
                 type={"checkbox"}
                 id={type}
@@ -68,7 +68,7 @@ const UserForm = (props) => {
         })}
       </div>
       {/* dispatch new user to redux */}
-      <Button onClick={props.NewUser}>Create</Button>
+      <Button className="btn_Dispatch" onClick={props.NewUser}>Create</Button>
     </Form>
   );
 };
